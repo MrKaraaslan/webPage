@@ -20,12 +20,12 @@
 			}
 			
 			.jum{
+				min-height: 500px;
 				height: 100%;
 				background-color: #ffffff;
 				padding-top: 10%;
 			}
-			
-			.about{
+			.gray{
 				background-color: #C0C0C0;
 			}
 			
@@ -51,13 +51,7 @@
 						<a class="nav-link" href="#">Ana sayfa<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Hakkımda</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link" href="#">Tutorials</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">İletişim</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -75,38 +69,97 @@
 		</nav>
 		
 
-
 		<!--jumbotron-->
 		<div class="jum">
 			<div class="container text-center ">
 				<h1 class="display-3">Mehmet Karaaslan</h1>
-				<a href="https://github.com/MrKaraaslan?tab=repositories">
+				<p> </p>
+				<a href="https://github.com/MrKaraaslan?tab=repositories" target="_blank">
 					<img class="img" src="img/GitHub.svg">
 				</a>
-				<p style="padding-top: 50px; color: red;">This page is still under development</p>
 				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+				<p style="color: red;">This page is still under development</p>
 			</div>
 		</div>
 		
 		<!--About me-->
-		<div class = "jumbotron  about">
-			<h1 class = "display-5 margin">Kısaca ben...</h1>
-			
-			<p style = "padding-left:25px; padding-right:25px;">
-				1999 senesinde Kahramanmaraş'ta doğdum. 
-				İlk ve orta öğrenimimi tamamladıktan sonra 
-				Vefa lisesini kazanıp İstanbul'a geldim. 
-				Vefa lisesinde geçirdiğim 5 güzel yılın ardından 
-				mezun olup İstanbul Teknik Üniversitesi 
-				Bilgisayar Mühendisliği'ni kazandım. 
-				Şu anda lisans eğitimime devam etmekteyim.</p>
-				
-			<p style = "padding-left:25px; padding-right:25px;"></p>
-			
+		<div class = "jumbotron gray">
+			<div class = "container">
+				<h2 class = "display-5" id = "about-me">
+					<span class="bd-content-title">
+						Kısaca ben...
+					</span>
+				</h2>
+				<div class="container">
+					<p style = "padding-left:25px; padding-right:25px;">
+						1999 senesinde Kahramanmaraş'ta doğdum. 
+						İlk ve orta öğrenimimi tamamladıktan sonra 
+						Vefa lisesini kazanıp İstanbul'a geldim. 
+						Vefa lisesinde geçirdiğim 5 güzel yılın ardından 
+						mezun olup İstanbul Teknik Üniversitesi 
+						Bilgisayar Mühendisliği'ni kazandım. 
+						Şu anda lisans eğitimime devam etmekteyim.
+					</p>
+				</div>
+			</div>
 		</div>
+		
+		<!--Connect to me-->
+		<div class = "jumbotron gray">
+			<div class = "container">
+				<h2 class = "display-5">
+					<span class="bd-content-title">
+						Bana ulaşın...
+					</span>
+				</h2>
+				
+				<div class = "container">
+					<div style = "padding-left:25px; padding-right:25px;" >
+						<div style="padding-top: 20px; padding-bottom:20px;">
+							<a href = "mailto:developerkaraaslan@gmail.com?Subject=Contact%20From%20Website&Body=Name%20please:">
+								<img class="img" src="img/Email.svg">
+							</a>
+						</div>
+						
+						<div>
+							<h6>Ya da formu doldurun</h6>
+							<div style = "padding-top: 20px; padding-bottom:20px;">
 
+								<form class = "gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbzXckxeZxfZ5DRYk6h3uQTk8nClL4sG3HOIUE6URQ/exec">
+									<div class="form-group">
+										<label for="name">İsminiz</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Mehmet Karaaslan">
+									</div>
 
+									<div class="form-group">
+										<label for="email">Email adresiniz</label>
+										<input type="email" class="form-control" id="email" name="email" value="" required placeholder="developerkaraaslan@gmail.com">
+										<span class="email-invalid" style="display:none; color:red;">
+											Lütfen geçerli bir email adresi giriniz</span>
+									</div>
 
+									<div class="form-group">
+										<textarea class="form-control" id="message" name="message" placeholder="Mesajınız..." style = "height: 150px; max-height: 150px;"></textarea>
+									</div>
+
+									<div class="form-group">
+										<button type="submit" class="btn btn-success">Gönder</button>
+									</div>
+									
+									<div class="thankyou_message" style="display:none;">
+										<h2>Mesajınız iletildi. En kısa sürede size döneceğim.</h2>
+									</div>
+								</form>
+								
+								<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+							
+							</div>
+						</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+		
 
 
 
@@ -114,12 +167,14 @@
 		
 		
 		
+		<!-- Form script-->
 		
-
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		
+		
 	</body>
 </html>
