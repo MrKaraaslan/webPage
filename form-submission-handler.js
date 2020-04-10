@@ -125,7 +125,7 @@
     }
      var invalidEmail = form.querySelector(".email-invalid");
       if (invalidEmail) {
-        invalidEmail.style.display = "nonegit";
+        invalidEmail.style.display = "none";
       }
 	form.reset();
   }
