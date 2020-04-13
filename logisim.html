@@ -1,0 +1,201 @@
+<!--
+   logisimSolution.html
+   
+   Copyright 2020 Mehmet Karaaslan <karaaslan18@itu.edu.tr>
+   
+-->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<title>Mehmet Karaaslan</title>
+		
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+			}
+			body {
+				padding-top: 3.5rem;
+			}
+			
+			.jum{
+				background-color: #ffffff;
+				padding-top: 10%;
+			}
+			.gray{
+				background-color: #C0C0C0;
+			}
+			.white{
+				background-color: #ffffff;
+			}
+			
+			.img{
+				width: 75%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.img2{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand" href="#">Mr. Karaaslan</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+		
+
+		<!--jumbotron-->
+		<div class="jum">
+			<div class="container text-center ">
+				<h1 class="display-4">Logisim için basit bir çözüm</h1>
+			</div>
+		</div>
+		
+		<div class="jumbotron gray">
+			<div class="container">
+				<img class="img" src="img/logisim/1.png">
+			</div>
+		</div>
+		
+		<div class="jumbotron white">
+			<div class="container">
+				<h2 class="display-5">Logisim</h2>
+				
+				<div class = "container">
+					<ol>
+						<li>
+							Logisim uygulamasına sağ tıklayıp paket 
+							içeriğini göster'e tıklayın.
+						</li>
+						
+						<li>
+							Contents/Resources klasörüne ilerleyip 
+							logisim.jar dosyasını içeren 
+							"Java" klasörünü alın. Uygulamanın geri kalanına 
+							ihtiyacınız yok.
+						</li>
+						
+						<li>
+							Logisim uygulamasını indirmediyseniz logisim.jar 
+							dosyasına <a href="files/logisim.jar" download >buradan</a> 
+							ulaşabilirsiniz.
+						</li>
+					</ol>
+				</div>
+				
+				<div class="container">
+					<h2 class="display-5">Automator</h2>
+					<ol>
+						<li>
+							<div>
+								<p>Automator uygulasını açın.</p>
+								<img src="img/logisim/auto-1.png">
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<p>Karşınıza çıkan ekrandan uygulama seçeneğini seçin.</p>
+								<img class="img" src="img/auto-2.png">
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<p>Arama kısmına apple yazıp AppleScript'i Çalıştır'ı 
+								fare ile ekrana sürükleyin.</p>
+								<img class="img" src="img/logisim/auto-3.png">
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<p>Aşağıdaki kodu yapıştırın ve return input satırını silin.</p>
+								<p>
+									set p to POSIX path of (path to me) <br>
+									do shell script "java -jar " & p & "/Contents/Java/logisim.jar"
+								</p>
+								<img class="img" src="img/logisim/auto-4.png">
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<p>cmd ve s tuşlarına basıp uygulamanıza 
+								isim verip kaydedin. Uzantısının .app 
+								olmasına dikkat edin</p>
+								<p>Automator'u kapatabilirsiniz.</p>
+								<img class="img" src="img/logisim/auto-5.png">
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<p>Uygulamamız klasöre kaydedildi</p>
+								<img src="img/logisim/app-1.png">
+							</div>
+						</li>
+					</ol>
+				</div>
+				
+				<div class="coontainer">
+					<h2 class="display-5">Son dokunuş</h2>
+					<ol>
+						<li>
+							<div>
+								<p>Sağ tıklayıp paket içeriğini göster'e tıklayın.</p>
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<p>Contents klasörüne girip logisimden aldığınız 
+								Java klasörünü koyun.</p>
+								<p>logisim.jar dosyasını bu siteden indirdiyseniz 
+								Java isimli yeni klasör oluşturun ve 
+								logisim.jar dosyasını klasörün içine taşıyın</p>
+							</div>
+						</li>
+						
+						<li>
+							<div>
+								<p>Uygulamamız kullanıma hazır.</p>
+								<img class="img" src="img/logisim/app-2.png">
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		
+		
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
+
